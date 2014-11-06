@@ -20,8 +20,6 @@ app.get '/pulse', (req, res) ->
 	else
 		res.status(500).end()
 
-if require.main == module
-	app.listen 8000, ->
-		console.log "Listening on #{this.address().address}:#{this.address().port}"
-else
-	exports.app = app
+http.listen 4000, ->
+	console.log('listening on *:4000')
+

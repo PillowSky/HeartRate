@@ -1,6 +1,7 @@
 {
 	"name": "transit",
 	"version": "0.0.1",
+	"private": true,
 	"description": "socket.io to transit",
 	"dependencies": {
 		"express": "x",
