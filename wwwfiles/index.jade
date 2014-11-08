@@ -7,12 +7,20 @@ html
 		meta(name="renderer" content="webkit")
 		meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
 		title Pulse
-		script(src="/bower_components/jquery/dist/jquery.min.js")
+		link(rel="stylesheet" href="bower_components/normalize.css/normalize.css")
+		link(rel="stylesheet" href="css/style.css")
+		script(src="bower_components/jquery/dist/jquery.min.js")
 		script(src="http://cdn.socket.io/socket.io-1.2.0.js")
-		script(src="/js/script.js")
+		script(src="js/script.js")
 
 	body
-		div
-			p Rate:
-			p#rate 0
-		
+		header
+			p Your Pulse
+
+		div#circle
+			div#rateWrapper
+				div#rate 0
+
+		div#control
+			svg#heart
+			span#button Start

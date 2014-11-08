@@ -1,0 +1,63 @@
+body {
+	background-color: #E8ECF1;
+}
+header{
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 2px 4px #666;
+	p {
+		margin: 0;
+		padding: 0.4rem 0;
+		text-align: center;
+		color: white;
+		font-size: 2rem;
+	}
+}
+div#circle{
+	margin: 20vh auto 0;
+	width: 40vh;
+	height: 40vh;
+	border: solid 0.6rem #DC0057;
+	border-radius: 40vh;
+	box-shadow: 0 0 1.5rem #666;
+	div#rateWrapper{
+		text-align: center;
+		line-height: 40vh;
+		div#rate{
+			margin-left: 2.5rem;
+			font-size: 5rem;
+			color: #333;
+		}
+		div#rate::after{
+			content: "BPM";
+			margin-left: 0.5rem;
+			font-size: 1.2rem;
+			color: #666;
+		}
+	}
+}
+div#control{
+	margin: 4rem auto 0;
+	width: 40vh;
+	text-align: center;
+	color: #DC0057;
+	font-size: 1.6rem;
+	line-height: 3rem;
+	border: solid 0.15rem #DC0057;
+	border-radius: 0.25rem;
+	cursor: pointer;
+	transition: all 0.5s;
+	vertical-align: center;
+	&:hover{
+		background-color: #DC0057;
+		color: white;
+	}
+	svg#heart{
+		margin-bottom: -0.4rem;
+		width: 2rem;
+		height: 2rem;
+	}
+	span#button{
+		text-align: center;
+		margin-left: 0.5rem;
+	}
+}
