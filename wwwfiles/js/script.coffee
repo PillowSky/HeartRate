@@ -23,9 +23,9 @@ $(
 		$('div#control').click ->
 			if window.running
 				window.running = false
-				$('span#button').text("Start")
+				$('span#button').text("START")
 				$('div#rate').text(0)
 			else
 				window.running = true
-				$('span#button').text("Stop")
+				$('span#button').text("STOP")
 )
